@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voz Infantil Activa</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f8f8;
+}
+
+/*=========================
+MENÚ
+=========================*/
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
+    color:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:35px;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD600;
+}
+
+/*=========================
+PORTADA
+=========================*/
+
+.hero{
+    width:100%;
+    height:100vh;
+}
+
+.banner{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/*=========================
+¿QUÉ ES VIA?
+=========================*/
+
+#nosotros{
+    background:white;
+    padding:100px 10%;
+}
+
+.subtitulo{
+    color:#2E7D32;
+    letter-spacing:3px;
+    font-weight:bold;
+    font-size:15px;
+}
+
+h2{
+    font-size:50px;
+    margin-top:15px;
+    color:#222;
+}
+
+.barra{
+    width:90px;
+    height:6px;
+    background:#e53935;
+    border-radius:20px;
+    margin:20px 0 35px;
+}
+
+.texto{
+    max-width:900px;
+    font-size:20px;
+    line-height:1.9;
+    color:#555;
+    text-align:justify;
+}
+
+.texto p{
+    margin-bottom:20px;
+}
+
+/*=========================
+VALORES
+=========================*/
+
+#valores{
+    padding:100px 10%;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:170px;
+    height:170px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.card h3{
+    color:#d32f2f;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.7;
+    font-size:17px;
+}
+
+/*=========================
+RESPONSIVE
+=========================*/
+
+@media(max-width:900px){
+
+header{
+    padding:20px;
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    margin:0 10px;
+    font-size:16px;
+}
+
+h2{
+    font-size:38px;
+}
+
+.texto{
+    font-size:18px;
+    text-align:left;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">VIA</div>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">¿Qué es VIA?</a>
+<a href="#valores">Valores</a>
+</nav>
+
+</header>
+
+<section id="inicio" class="hero">
+<img src="portada.jpg" class="banner" alt="Portada VIA">
+</section>
+
+<section id="nosotros">
+
+<span class="subtitulo">CONÓCENOS</span>
+
+<h2>¿Qué es VIA?</h2>
+
+<div class="barra"></div>
+
+<div class="texto">
+
+<p><strong>VIA (Voz Infantil Activa)</strong> es la <strong>Lista 2</strong>, un equipo de estudiantes que nace del deseo de generar un cambio positivo en la comunidad educativa del Colegio Nicolás Infante Díaz.</p>
+
+<p>Creemos que una buena educación no solo se basa en el aprendizaje académico, sino también en el bienestar emocional, el respeto y la unión entre todos los estudiantes.</p>
+
+<p>Nuestro principal objetivo es <strong>priorizar la salud mental de los estudiantes</strong>, promoviendo un ambiente escolar donde cada voz sea escuchada, cada opinión sea valorada y cada persona se sienta acompañada.</p>
+
+<p>Queremos demostrar que los cambios reales no se logran únicamente con promesas, sino con <strong>acciones concretas</strong> que beneficien a toda la comunidad estudiantil.</p>
+
+<p>En VIA creemos en el trabajo en equipo, la empatía, la inclusión y el compromiso. Como <strong>Lista 2</strong>, trabajaremos con responsabilidad, transparencia y dedicación para construir un mejor Colegio Nicolás Infante Díaz.</p>
+
+</div>
+
+</section>
+
+<section id="valores">
+
+    <span class="subtitulo">NUESTRA ESENCIA</span>
+
+    <h2>Nuestros Valores</h2>
+
+    <div class="barra" style="margin:auto;margin-top:20px;margin-bottom:50px;"></div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>👂 Escuchamos</h3>
+            <p>
+                Creemos que cada estudiante merece ser escuchado. Valoramos las ideas,
+                opiniones y necesidades de toda la comunidad educativa porque cada voz
+                puede generar un cambio positivo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Respetamos</h3>
+            <p>
+                Promovemos el respeto, la empatía y la buena convivencia para construir
+                un colegio donde todos puedan sentirse seguros, valorados e incluidos.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌎 Integramos</h3>
+            <p>
+                Trabajamos para que ningún estudiante se sienta excluido. Queremos un
+                colegio unido donde todos participen sin importar sus diferencias.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Transformamos</h3>
+            <p>
+                Nuestro compromiso es convertir las ideas en acciones reales que mejoren
+                la vida estudiantil y fortalezcan el bienestar de nuestra comunidad.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
